@@ -32,3 +32,18 @@ src="https://img.shields.io/github/followers/onyango001?logo=github&style=for-th
 
 <div width="100%" align="center"><a href="https://github.com/onyango001/onyango001" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=onyango001&repo=onyango001&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a></div><br /><br /><br /><br /><br /><br /><br />
 
+# Weekend Academy Timetable
+
+A simple, accessible HTML/CSS project to display a weekend academy timetable.
+
+
+
+## 📝 Description
+
+This project presents a clear and responsive timetable layout for a weekend academy using **HTML** and **CSS**. It focuses on both visual clarity and accessibility, ensuring the content is usable for a broad range of users, including those using assistive technologies.
+
+---<img width="1472" height="901" alt="Screenshot 2025-09-16 223214" src="https://github.com/user-attachments/assets/45ebc91b-bba6-4a8e-8d61-458e7ab1b77b" />
+
+
+## 📁 Project Structure
+
