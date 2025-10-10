@@ -1,0 +1,248 @@
+/* ====================================z
+   RESET / NORMALIZE STYLES (Optional)
+======================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ====================================
+   CSS VARIABLES (Recommended)
+======================================= */
+:root {
+  /* Primary Colors */
+  --color-primary-blue: #2563eb;
+  --color-primary-dark: #1e40af;
+  --color-primary-light: #3b82f6;
+
+  /* Neutral Colors */
+  --color-background: #f9fafb;
+  --color-white: #ffffff;
+  --color-text-dark: #1f2937;
+  --color-text-light: #6b7280;
+  --color-border: #d1d5db;
+  --color-border-focus: #2563eb;
+
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+
+  /* Accent Colors */
+  --color-accent-purple: #8b5cf6;
+  --color-accent-pink: #ec4899;
+
+  /* Typography */
+  --font-size-heading: 1.75rem;
+  --font-size-label: 1rem;
+  --font-size-input: 1rem;
+  --font-size-legend: 1.25rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+
+  /* UI */
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ====================================
+   LAYOUT STYLES
+======================================= */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+}
+
+/* ====================================
+   FORM CONTAINER STYLES
+======================================= */
+h1.form-title {
+  font-size: var(--font-size-heading);
+  font-weight: bold;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+legend {
+  font-size: var(--font-size-legend);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ====================================
+   INPUT FIELD STYLES
+======================================= */
+.form-group {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: var(--font-size-label);
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-dark);
+}
+
+input,
+select,
+textarea,input[type="date"],input[type="time"],input[type="datetime-local"],input[type="file"],input[type="color"],input[type="range"] {
+  font-size: var(--font-size-input);
+  padding: var(--spacing-xs);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder,textarea::placeholder {
+  color: var(--color-text-light);
+}
+
+/* Focus States */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-border-focus);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Hover States */
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--color-primary-light);
+}
+
+/* Textarea */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Range Slider */
+input[type="range"] {
+  height: 4px;
+  background-color: var(--color-border);
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: var(--color-primary-blue);
+  cursor: pointer;
+}
+
+/* Checkboxes & Radios */
+input[type="checkbox"],input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: var(--color-primary-blue);
+}
+
+/* File Upload */
+input[type="file"] {
+  padding: 0.3rem;
+  background-color: var(--color-background);
+}
+
+/* Color Picker */
+input[type="color"] {
+  padding: 0.2rem;
+  height: 40px;
+  border: 1px solid var(--color-border);
+}
+
+/* ====================================
+   BUTTON STYLES
+======================================= */
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Reset Button */
+button[type="reset"] {
+  background-color: var(--color-border);
+  color: var(--color-text-dark);
+  margin-left: var(--spacing-sm);
+}
+
+button[type="reset"]:hover {
+  background-color: var(--color-text-light);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ====================================
+   RESPONSIVE STYLES
+======================================= */
+@media (max-width: 600px) {
+  form {
+    padding: var(--spacing-md);
+  }
+
+  button,input,select,textarea {
+    font-size: 1rem;
+    min-height: 44px; /* Mobile friendly */
+  }
+
+  h1.form-title {
+    font-size: 1.5rem;
+  }
+}

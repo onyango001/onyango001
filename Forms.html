@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER REGESTRATION FORM</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+<form action="/register" method="post">
+    <h1>User Regestration Form</h1>
+    <div>
+        <fieldset>
+          <legend class="Info">Personal Information</legend>
+   First Name: <input type="text" name="text"  id="text" required><br>
+    Last Name:<input type=" text" name="text" id="text" required><br>
+    Date Of Birth:<input type="date" name="date" id="date" ><br>
+    Age:<input type="number" name="number" id="number"><br>
+    Male: <input type="radio" name="Gender" id="Gender" value="Male"><br>
+    Female:<input type="radio" name="Gender" id="Gender" value="Female"><br>
+    Profile Photo:<input type="file" name="file" id="file>br
+        </fieldset>
+        <fieldset>
+    <legend>Contact & Address Information</legend>
+    Email Address:<input type="email" name="email" id="email"><br>
+    Phone Number:<input type="tel" name="tel" id="tel"><br>
+    Personal Website:<input type="url" name="url" id="url" placeholder="https://example.com"><br>
+    Street Address:<input type="text" name="text" id="text"><br>
+    City:<input type="text" name="email" id="enail"><br>
+   Country: <select name="Country" id="country">
+    <option value="select country">select country</option><br>
+   </select><br>
+    ZIP Postal Code:<input type="number" name="number" id="number"><br>
+    Preferred Contact Time:<input type="time" name="time" id="time"><br>
+        </fieldset>
+        <fieldset>
+    <legend>Preferences & Intrest</legend>
+    Favorite Color:<input type="color" name="red" id="color"  red><br>
+    Experience Level(1-10)<input type="range" name="range" id="range"><br>
+     Birth Month:<input type="month" name="month" id="month"><br>
+    Search Keyword:<input type="search" name="Enter keyword" id="search"><br>
+    Intrest(select all that apply):<br><input type="checkbox" name="Intrest" id="Intrest">Technology<br>
+<input type="checkbox" name="Intrest" id="Sports">Sports<br>
+<input type="checkbox" name="Intrest" id="Music">Music<br>
+<input type="checkbox" name="Intrest" id="Travel">Travel<br>
+<input type="checkbox" name="Intrest" id="reading">Reading<br>
+<input type="checkbox" name="Intrest" id="Cooking">Cooking<br>
+Education Level:<select name="Education Level" id="Education Level"><br>
+    <option value="select Education Level">select Education Level</option>
+     <option value="select Education Level">NONE</option>
+ <option value="select Education Level">PRIMARY</option>
+ <option value="select Education Level">HIGH SCHOOL</option>
+ <option value="select Education Level">UNIVERSITY</option>
+</select><br>
+Create Password:<input type="password" name="pwd" id="pwd"><br>
+Confirm password:<input type="password" name="pwd"><br>
+</fieldset>
+<fieldset>
+<legend>Feedback & Additional Information</legend>
+Tell us about youself:<textarea name="text" id="text">Write a brief description about youself...</textarea><br>
+Suggestion for improvement:<textarea name="text" id="text">Any suggestion or Feedback</textarea><br>
+Regestration Date & Time:<input type="date" name="date" id="date"><br>
+How did you hear about us?<select name="select" id="select">
+    <option value="select Source">select Source</option>
+</select><br>
+Upload Resume(optional|):<input type="file" name="file" id="file"><br>
+<input type="checkbox" name="checkbox" id="checkbox">Subscribe to our newsletter<br>
+<input type="checkbox" name="checkbox" id="checkbox">I agree to the Terms and Condition<br>
+<input type="checkbox" name="checkbox" id="checkbox">I agree to the Privacy Policy<br>
+</fieldset>
+<button "submit">Register</button>
+<button "reset"> Clear Form</button> 
+    </div>
+</form>    
+</body>
+</html>
