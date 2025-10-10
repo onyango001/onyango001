@@ -42,8 +42,56 @@ A simple, accessible HTML/CSS project to display a weekend academy timetable.
 
 This project presents a clear and responsive timetable layout for a weekend academy using **HTML** and **CSS**. It focuses on both visual clarity and accessibility, ensuring the content is usable for a broad range of users, including those using assistive technologies.
 
+## 📝 Description
 ---<img width="1472" height="901" alt="Screenshot 2025-09-16 223214" src="https://github.com/user-attachments/assets/45ebc91b-bba6-4a8e-8d61-458e7ab1b77b" />
+<img width="575" height="895" alt="Screenshot 2025-10-10 174739" src="https://github.com/user-attachments/assets/c5930782-06ac-43c0-a6e6-1c60ec376a56" /><img width="568" height="682" alt="Screenshot 2025-10-10 174947" src="https://github.com/user-attachments/assets/1a6dccfb-e6ce-4b09-933d-39522cdc5a29" /><img width="566" height="700" alt="Screenshot 2025-10-10 175103" src="https://github.com/user-attachments/assets/69421031-4ff2-427c-8d53-e47aef025150" />
 
 
-## 📁 Project Structure
+
+🖌️ Styling Approach
+
+We follow a modular and scalable CSS architecture using the BEM (Block Element Modifier) methodology. This helps keep our styles consistent, maintainable, and easy to understand. All styles are organized into separate files by component or feature, promoting reuse and reducing specificity conflicts.
+
+We also use custom properties (CSS variables) for consistent theming and easier updates across the codebase.
+
+🎨 Color Palette
+
+Our design system is built around a minimal, accessible color palette:
+
+Color	Usage	Hex
+Primary	Buttons, links, highlights	#007BFF
+Secondary	Cards, panels, footers	#6C757D
+Background	Page background	#F8F9FA
+Text Primary	Main body text	#212529
+Accent	Icons, indicators, emphasis	#FFC107
+Error	Validation, alerts	#DC3545
+
+
+✨ Features Implemented (CSS Techniques)
+
+Flexbox & Grid: Responsive layouts built using modern layout systems.
+
+CSS Variables: For theming and consistent design tokens.
+
+Media Queries: For mobile-first responsive design.
+
+Transitions & Animations: Smooth hover and UI feedback.
+
+Custom Scrollbars: Styled scrollbars in supported browsers.
+
+Dark Mode Support (optional): Easily toggled via root variables.
+
+Utility Classes: Lightweight utility classes for spacing, alignment, and display.
+
+🌐 Browser Compatibility
+
+The application has been tested and works consistently across major browsers:
+
+Browser	Version Tested	Notes
+Chrome	90+	Fully supported
+Firefox	88+	Fully supported
+Safari	14+	Minor flexbox quirks handled
+Edge	90+	Fully supported
+Mobile Safari	iOS 14+	Fully responsive
+Android Chrome	Latest	Fully responsive
 
